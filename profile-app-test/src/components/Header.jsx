@@ -1,6 +1,7 @@
+//ヘッダー部分
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import { Link } from '@mui/material';
 
 
 import AppBar from '@mui/material/AppBar';
