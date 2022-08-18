@@ -2,3 +2,7 @@
     width: 390px;
 }
 
+.chart{
+    max-width: 400px;
+    max-height: 400px;
+}

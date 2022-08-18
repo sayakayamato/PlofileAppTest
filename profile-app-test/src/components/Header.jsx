@@ -19,6 +19,7 @@ import ListItemText from '@mui/material/ListItemText';
 import GroupIcon from '@mui/icons-material/Group';
 import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 
 
 
@@ -115,17 +116,23 @@ export const Header = () => {
             {/* 右のツールバーをクリックした時に出てくるもの */}
             <Drawer anchor='right' open={rightlistopen} onClose={rightlistClose}>
                 <List sx={{ width: 300 }}>
+                    <ListItem button onClick={rightlistClose} component={Link} to={"/MyProfile"} >
+                        <ListItemIcon>
+                            <AssignmentIndIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="自分のプロフを見る" />
+                    </ListItem>
                     <ListItem button onClick={rightlistClose} component={Link} to={"/"} >
-                    <ListItemIcon>
-                        <AssignmentIndIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="プロフ帳を見る" />
+                        <ListItemIcon>
+                            <CompareArrowsIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="プロフを交換する" />
                     </ListItem>
                     <ListItem button onClick={rightlistClose} component={Link} to={"/info"} >
-                    <ListItemIcon>
-                        <CompareArrowsIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="プロフを交換する" />
+                        <ListItemIcon>
+                            <AutoStoriesIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="プロフ帳を見る" />
                     </ListItem>
                 </List>
             </Drawer>

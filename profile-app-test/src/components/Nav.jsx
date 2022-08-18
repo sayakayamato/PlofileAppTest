@@ -8,6 +8,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import HomeIcon from '@mui/icons-material/Home';
 import FeedIcon from '@mui/icons-material/Feed';
 import CreateIcon from '@mui/icons-material/Create';
+import MessageIcon from '@mui/icons-material/Message';
 
 
 
@@ -28,6 +29,7 @@ export const Nav = () => {
                 <BottomNavigationAction label="Home" icon={<HomeIcon />} component={Link} to="/"/>
                 <BottomNavigationAction label="Timeline" icon={<FeedIcon />} component={Link} to="/ranking"/>
                 <BottomNavigationAction label="Create" icon={<CreateIcon />} component={Link} to="/create"/>
+                <BottomNavigationAction label="DM" icon={<MessageIcon />} component={Link} to="/create"/>
             </BottomNavigation>
         </Box>
         </>
